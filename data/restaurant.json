@@ -1,0 +1,1072 @@
+{
+  "_notice": "Concept redesign preview (a proposal). Not the official Hu's Noodle Nook website; facts and prices may be out of date. Official site: https://husnoodlenook.ca",
+  "_meta": {
+    "purpose": "Single source of truth for Hu's Noodle Nook. The website, llms.txt, JSON-LD and agent endpoints are all generated from / must agree with this file.",
+    "lastVerified": "2026-11-07",
+    "sources": [
+      "https://order.husnoodlenook.ca/menu?menuId=308 (menu + prices, most current)",
+      "https://husnoodlenook.ca (drinks, photos, descriptions)",
+      "Google Business Profile (address, phone, rating, 433 reviews)",
+      "Instagram @hus_noodle_nook bio (hours)"
+    ],
+    "dietaryTagsNote": "Dietary/allergen tags are inferred from menu descriptions, not confirmed by the kitchen. Always tell guests to confirm allergies with staff."
+  },
+  "restaurant": {
+    "name": "Hu's Noodle Nook",
+    "nameNative": "胡氏麵館",
+    "tagline": "Ramen & Noodle",
+    "cuisine": [
+      "Japanese",
+      "Ramen",
+      "Noodles",
+      "Izakaya small plates"
+    ],
+    "description": "A cozy, family-feel ramen and noodle shop in Edmonton's Oliver neighbourhood. Known for its house Tan Tan (peanut-sesame, spicy pork) ramen and udon, long-simmered tonkotsu broth, Hu's own Chinese-style noodle bowls, tempura, donburi and hot stone nabe.",
+    "openedYear": 2023,
+    "address": {
+      "street": "11238 104 Ave NW",
+      "building": "The Residences On 104th (ground floor)",
+      "neighbourhood": "Oliver",
+      "city": "Edmonton",
+      "region": "AB",
+      "postalCode": "T5K 2X4",
+      "country": "CA"
+    },
+    "geo": null,
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hu%27s+Noodle+Nook+11238+104+Ave+NW+Edmonton",
+    "phone": "+1-780-250-2600",
+    "phoneDisplay": "(780) 250-2600",
+    "website": "https://husnoodlenook.ca",
+    "orderOnline": "https://order.husnoodlenook.ca",
+    "delivery": [
+      "DoorDash",
+      "SkipTheDishes"
+    ],
+    "instagram": "https://www.instagram.com/hus_noodle_nook/",
+    "reservations": "Call (780) 250-2600. Walk-ins welcome; most reviewers report no wait.",
+    "hours": [
+      {
+        "day": "Monday",
+        "open": null,
+        "close": null,
+        "closed": true
+      },
+      {
+        "day": "Tuesday",
+        "open": "11:30",
+        "close": "20:00"
+      },
+      {
+        "day": "Wednesday",
+        "open": "11:30",
+        "close": "20:00"
+      },
+      {
+        "day": "Thursday",
+        "open": "11:30",
+        "close": "20:00"
+      },
+      {
+        "day": "Friday",
+        "open": "11:30",
+        "close": "20:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "12:00",
+        "close": "20:00"
+      },
+      {
+        "day": "Sunday",
+        "open": "11:30",
+        "close": "19:00"
+      }
+    ],
+    "hoursNote": "Hours from the restaurant's Instagram bio; holiday hours may differ.",
+    "priceRange": "$$",
+    "pricePerPerson": "CA$10–30 (most reviewers: $10–20 at lunch, $20–30 at dinner)",
+    "services": [
+      "Dine-in",
+      "Takeout / pickup",
+      "Delivery",
+      "Online ordering",
+      "Cocktails, beer & sake"
+    ],
+    "parking": "Free parking in the building's lot. You must register your licence plate on the tablet at the front counter (covers about 3 hours); the lot is monitored. Bicycle parking available.",
+    "accessibility": "Ground-floor restaurant in a residential tower. Confirm specific needs by phone.",
+    "kids": "Very kid-friendly: high chairs, kids' plastic plates and cutlery, change table in the washroom; staff are noted as great with children.",
+    "groups": "Best for 1–4 people; small dining room with counter and table seating. Call ahead for 5–8.",
+    "noise": "Quiet to moderate — reviewers repeatedly say it's easy to talk.",
+    "promotions": [
+      "Online: free can of pop on orders of $50+.",
+      "Limited time: free 1 pc tempura shrimp with Hu's Classic Noodle, Red Flame Noodle and Tan Tan Udon."
+    ]
+  },
+  "reviews": {
+    "platform": "Google",
+    "rating": 4.7,
+    "count": 433,
+    "subscores": {
+      "basedOn": 223,
+      "food": 4.73,
+      "service": 4.85,
+      "atmosphere": 4.72
+    },
+    "mostRecommended": [
+      "Tan Tan Ramen",
+      "Tonkotsu Ramen",
+      "Tan Tan Udon",
+      "Curry Ramen",
+      "Miso Ramen",
+      "Chicken Karaage",
+      "Ebi (Shrimp) Tempura",
+      "Hu's Beef Udon",
+      "Spicy Garlic Miso Ramen",
+      "Black Garlic Ramen"
+    ],
+    "themes": {
+      "loved": [
+        "Tan Tan is the signature: rich, layered, slightly creamy peanut-sesame broth that people finish to the last drop.",
+        "Noodles cooked perfectly — chewy, not too soft or firm.",
+        "Service is the standout (4.85/5): warm, attentive, patient with first-timers, great with kids, helpful with vegetarian picks.",
+        "Cozy, clean, quiet little room — easy to talk; good for a solo lunch, a date or a family dinner.",
+        "Usually no wait; free parking (register your plate).",
+        "Big menu beyond ramen: udon, Hu's Chinese-style noodle bowls, tempura, donburi, hot stone nabe, izakaya snacks."
+      ],
+      "constructive": [
+        "Bowls are right-sized — a regular bowl is plenty for most guests. Bigger appetite? Pair it with a small plate like karaage or gyoza, or a mini donburi.",
+        "Ramen purists sometimes find the plain tonkotsu lighter than 24-hour specialist shops; the flavoured broths (Tan Tan, Black Garlic, Spicy Garlic Miso) win more fans.",
+        "Specials like tsukemen can sell out."
+      ]
+    },
+    "quotes": [
+      {
+        "text": "Definitely one of the most satisfying bowls of noodles I've had in Edmonton.",
+        "author": "Frank W.",
+        "source": "Google"
+      },
+      {
+        "text": "Such a cozy little restaurant to have some wonderful Japanese food!",
+        "author": "Google reviewer",
+        "source": "Google"
+      },
+      {
+        "text": "Staff were very friendly and interacted with our kids which always makes us feel welcome.",
+        "author": "Google reviewer",
+        "source": "Google"
+      },
+      {
+        "text": "You can tell that the food is prepared meticulously.",
+        "author": "Google reviewer",
+        "source": "Google"
+      }
+    ]
+  },
+  "menu": {
+    "currency": "CAD",
+    "pricesNote": "Prices from the restaurant's own online ordering site (Nov 2026). Delivery apps charge more.",
+    "categories": [
+      {
+        "id": "ramen",
+        "name": "Ramen",
+        "nameJa": "ラーメン",
+        "note": "Most ramen are built on house tonkotsu (pork bone) broth simmered for many hours.",
+        "items": [
+          {
+            "id": "tan-tan-ramen",
+            "name": "Tan Tan Ramen",
+            "price": 15.95,
+            "desc": "House peanut and spicy sesame broth with spicy ground pork, peanuts, green onion and nori. The local favourite and top seller.",
+            "tags": [
+              "signature",
+              "spicy",
+              "pork",
+              "contains-peanut",
+              "contains-sesame"
+            ],
+            "img": null
+          },
+          {
+            "id": "tonkotsu-ramen",
+            "name": "Tonkotsu Ramen",
+            "price": 15.95,
+            "desc": "The heart of all our ramen — pork bone broth simmered for hours until hearty and creamy.",
+            "tags": [
+              "signature",
+              "pork"
+            ],
+            "img": "tonkotsu-ramen.jpg"
+          },
+          {
+            "id": "black-garlic-ramen",
+            "name": "Black Garlic Ramen",
+            "price": 16.95,
+            "desc": "Tonkotsu with chashu, marinated bamboo, sweet corn, garlic chips, red beni shoga and shredded green onion, drizzled with black garlic oil.",
+            "tags": [
+              "popular",
+              "pork"
+            ],
+            "img": "black-garlic-oil.jpg"
+          },
+          {
+            "id": "spicy-garlic-miso-ramen",
+            "name": "Spicy Garlic Miso Ramen",
+            "price": 15.95,
+            "desc": "A blend of spices gives traditional miso a savoury kick.",
+            "tags": [
+              "spicy",
+              "pork"
+            ],
+            "img": "bowl-spicy-miso.png"
+          },
+          {
+            "id": "miso-ramen",
+            "name": "Miso Ramen",
+            "price": 15.95,
+            "desc": "Tonkotsu soup base with homemade miso paste.",
+            "tags": [
+              "pork"
+            ],
+            "img": null
+          },
+          {
+            "id": "curry-ramen",
+            "name": "Curry Ramen",
+            "price": 15.95,
+            "desc": "Japanese curry blended into tonkotsu soup.",
+            "tags": [
+              "pork",
+              "mild-spicy"
+            ],
+            "img": null
+          },
+          {
+            "id": "shoyu-ramen",
+            "name": "Shoyu Ramen",
+            "price": 15.95,
+            "desc": "Soy-seasoned and one of our lightest soups — tangy, salty, savoury, with a marinated egg.",
+            "tags": [
+              "light",
+              "pork"
+            ],
+            "img": "bowl-shoyu.png"
+          },
+          {
+            "id": "shio-ramen",
+            "name": "Shio Ramen",
+            "price": 15.95,
+            "desc": "Tonkotsu seasoned with house sea salt: balanced pork flavour, light creamy broth, half egg.",
+            "tags": [
+              "light",
+              "pork"
+            ],
+            "img": "shio-shoyu-ramen.jpg"
+          },
+          {
+            "id": "vegetarian-ramen",
+            "name": "Vegetarian Ramen",
+            "price": 14.95,
+            "desc": "Vegetable broth with a generous portion of corn, bamboo, kikurage mushroom, seasonal veggies and three pieces of fried tofu.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": null
+          }
+        ]
+      },
+      {
+        "id": "toppings",
+        "name": "Ramen Toppings",
+        "nameJa": "トッピング",
+        "items": [
+          {
+            "name": "Marinated Egg",
+            "price": 2
+          },
+          {
+            "name": "Kimchi",
+            "price": 4
+          },
+          {
+            "name": "Spicy Soup",
+            "price": 1.25
+          },
+          {
+            "name": "Extra Noodle",
+            "price": 2.5
+          },
+          {
+            "name": "Bamboo Shoots",
+            "price": 1.25
+          },
+          {
+            "name": "Garlic",
+            "price": 1.25
+          },
+          {
+            "name": "Chashu",
+            "price": 4
+          },
+          {
+            "name": "Tan Tan Meat",
+            "price": 4
+          },
+          {
+            "name": "Naruto",
+            "price": 1.25
+          },
+          {
+            "name": "Onions",
+            "price": 1.25
+          },
+          {
+            "name": "Wood Ear Mushroom",
+            "price": 1.25
+          },
+          {
+            "name": "Corn",
+            "price": 1.25
+          },
+          {
+            "name": "Nori",
+            "price": 1.25
+          },
+          {
+            "name": "Butter",
+            "price": 1
+          },
+          {
+            "name": "Rice",
+            "price": 2
+          },
+          {
+            "name": "Chicken",
+            "price": 5
+          },
+          {
+            "name": "Beef",
+            "price": 6
+          },
+          {
+            "name": "Fried Tofu (3 pcs)",
+            "price": 2
+          },
+          {
+            "name": "Bean Sprouts",
+            "price": 2
+          },
+          {
+            "name": "Bok Choy",
+            "price": 2
+          },
+          {
+            "name": "Shrimp (2 pcs)",
+            "price": 2
+          },
+          {
+            "name": "Chicken Drumstick",
+            "price": 6
+          }
+        ]
+      },
+      {
+        "id": "noodles",
+        "name": "Hu's Noodles & Udon",
+        "nameJa": "麺",
+        "note": "Hu's own family-style noodle bowls — the 'Hu' in the name.",
+        "items": [
+          {
+            "id": "hus-classic-noodle",
+            "name": "Hu's Classic Noodle",
+            "price": 15.95,
+            "desc": "Braised diced pork and bean curd sticks with bean sprouts, preserved radish, cilantro and green onion.",
+            "tags": [
+              "signature",
+              "pork"
+            ],
+            "img": "hus-noodle.jpg"
+          },
+          {
+            "id": "hus-red-flame-noodle",
+            "name": "Hu's Red Flame Noodle",
+            "price": 15.95,
+            "desc": "The upgraded '2P' — ground pork and the chef's secret pickled chili blend, with bean sprouts, peanuts, preserved radish, cilantro, green onion and a marinated half egg.",
+            "tags": [
+              "signature",
+              "spicy",
+              "pork",
+              "contains-peanut"
+            ],
+            "img": "hus-2p.jpg"
+          },
+          {
+            "id": "tan-tan-udon",
+            "name": "Tan Tan Udon",
+            "price": 15.95,
+            "desc": "Thick udon in the tan tan base with spicy tan tan meat, salad and a choice of katsu or tempura.",
+            "tags": [
+              "popular",
+              "spicy",
+              "pork",
+              "contains-peanut",
+              "contains-sesame"
+            ],
+            "img": null
+          },
+          {
+            "id": "beef-noodle",
+            "name": "Hu's Beef Noodle",
+            "price": 18.5,
+            "desc": "Homemade beef soup with braised beef cutlet and stewed beef, sour cabbage, cilantro, green onion and veggies. Also available with rice noodle or udon (same price).",
+            "tags": [
+              "popular",
+              "beef"
+            ],
+            "img": "beef-noodle.jpg"
+          },
+          {
+            "id": "short-rib-noodle",
+            "name": "Short-Rib Noodle",
+            "price": 15.95,
+            "desc": "Light, mildly spicy pork broth with tender bite-sized pork short ribs, bean sprouts, sour cabbage, soya beans and green onion. Also with rice noodle.",
+            "tags": [
+              "mild-spicy",
+              "pork"
+            ],
+            "img": null
+          },
+          {
+            "id": "yaki-chicken-udon",
+            "name": "Yaki Chicken Udon",
+            "price": 16.95,
+            "desc": "Stir-fried udon with cabbage and carrot, topped with grilled teriyaki chicken.",
+            "tags": [
+              "chicken"
+            ],
+            "img": "chicken-yaki-udon.jpg"
+          },
+          {
+            "id": "hot-dry-noodle-tantan",
+            "name": "Hot Dry Noodle (Tan Tan or Red Flame meat)",
+            "price": 15.95,
+            "desc": "Saucy dry noodles (or udon) with peanuts, bean sprouts, green onion and preserved turnip, with a rich tonkotsu soup on the side.",
+            "tags": [
+              "spicy",
+              "pork",
+              "contains-peanut"
+            ],
+            "img": null
+          },
+          {
+            "id": "spicy-hot-dry-udon",
+            "name": "Spicy Hot Dry Udon",
+            "price": 13.95,
+            "desc": "Udon tossed in the signature spicy sauce with homemade ground pork, bean sprouts, green onion, crushed peanuts, marinated egg and tempura shrimp. $17.95 with chicken drum.",
+            "tags": [
+              "spicy",
+              "pork",
+              "contains-peanut",
+              "shellfish"
+            ],
+            "img": null
+          },
+          {
+            "id": "hus-cold-noodle",
+            "name": "Hu's Cold Noodle",
+            "price": 11.95,
+            "desc": "Refreshing cold noodle with shredded cucumber, carrot, bean sprout, cabbage and peanuts. $15.95 with chicken drum.",
+            "tags": [
+              "seasonal-summer",
+              "contains-peanut"
+            ],
+            "img": "cool-noodle.jpg"
+          }
+        ]
+      },
+      {
+        "id": "appetizers",
+        "name": "Small Plates",
+        "nameJa": "前菜",
+        "items": [
+          {
+            "id": "chicken-karaage",
+            "name": "Chicken Karaage",
+            "price": 10.95,
+            "desc": "Izakaya staple: marinated chicken fried crispy and juicy, with lemon.",
+            "tags": [
+              "popular",
+              "chicken"
+            ],
+            "img": "chicken-karaage.jpg"
+          },
+          {
+            "id": "yaki-gyoza",
+            "name": "Yaki Gyoza (5)",
+            "price": 7.95,
+            "desc": "Pan-fried pork, cabbage, garlic and green onion dumplings with house dipping sauce.",
+            "tags": [
+              "pork"
+            ],
+            "img": "yaki-gyoza.jpg"
+          },
+          {
+            "id": "takoyaki",
+            "name": "Takoyaki (4)",
+            "price": 6.95,
+            "desc": "Octopus balls with bonito flakes, okonomiyaki sauce, QP mayo and nori.",
+            "tags": [
+              "seafood"
+            ],
+            "img": "takoyaki.jpg"
+          },
+          {
+            "id": "agedashi-tofu",
+            "name": "Agedashi Tofu (6)",
+            "price": 6.95,
+            "desc": "Fried tofu with green onion and nori in savoury dashi broth.",
+            "tags": [
+              "fish-broth"
+            ],
+            "img": "agedashi-tofu.jpg"
+          },
+          {
+            "id": "edamame",
+            "name": "Edamame",
+            "price": 6.95,
+            "desc": "Steamed soy pods.",
+            "tags": [
+              "vegetarian",
+              "vegan"
+            ],
+            "img": "edamame.jpg"
+          },
+          {
+            "id": "hiyashi-wakame",
+            "name": "Hiyashi Wakame",
+            "price": 6.95,
+            "desc": "Seaweed salad with sesame.",
+            "tags": [
+              "vegetarian",
+              "contains-sesame"
+            ],
+            "img": "hiyashi-wakame.jpg"
+          },
+          {
+            "id": "veggie-spring-rolls",
+            "name": "Veggie Spring Rolls",
+            "price": 6.95,
+            "desc": "Crispy golden spring rolls.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": "spring-rolls.jpg"
+          },
+          {
+            "id": "pork-spring-rolls",
+            "name": "Pork Spring Rolls",
+            "price": 7.95,
+            "desc": "Crispy golden spring rolls.",
+            "tags": [
+              "pork"
+            ],
+            "img": null
+          },
+          {
+            "id": "aji-fry",
+            "name": "Aji Fry (2)",
+            "price": 7.85,
+            "desc": "Crispy mackerel — made for cold sake or a pint of Asahi.",
+            "tags": [
+              "seafood"
+            ],
+            "img": "aji-fry.jpg"
+          },
+          {
+            "id": "korokke",
+            "name": "Korokke Potato Cakes (2)",
+            "price": 6.95,
+            "desc": "Japanese potato croquettes.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": "korokke.jpg"
+          },
+          {
+            "id": "purple-yam-korokke",
+            "name": "Purple Yam Korokke",
+            "price": 6.95,
+            "desc": "Purple yam paste, pan-fried to a golden crust.",
+            "tags": [
+              "vegetarian",
+              "new"
+            ],
+            "img": null
+          },
+          {
+            "id": "crab-cheese-korokke",
+            "name": "Crab-Flavoured Cheese Korokke",
+            "price": 9.95,
+            "desc": "Creamy, cheesy croquettes with a savoury hint of crab.",
+            "tags": [
+              "seafood",
+              "new"
+            ],
+            "img": null
+          },
+          {
+            "id": "ika-geso-karaage",
+            "name": "Ika Geso Karaage",
+            "price": 9.95,
+            "desc": "Battered, fried squid tentacles.",
+            "tags": [
+              "seafood"
+            ],
+            "img": null
+          },
+          {
+            "id": "crispy-fried-squid",
+            "name": "Crispy Fried Squid",
+            "price": 8.95,
+            "desc": "Lightly battered squid, fried golden.",
+            "tags": [
+              "seafood"
+            ],
+            "img": null
+          },
+          {
+            "id": "baby-tako-karaage",
+            "name": "Baby Tako Karaage",
+            "price": 9.95,
+            "desc": "Small Japanese octopus fried crispy and juicy.",
+            "tags": [
+              "seafood"
+            ],
+            "img": null
+          },
+          {
+            "id": "scallop-mix-fry",
+            "name": "Scallop Mix Fry",
+            "price": 9.95,
+            "desc": "Golden crisp outside, soft inside.",
+            "tags": [
+              "seafood"
+            ],
+            "img": null
+          },
+          {
+            "id": "chicken-bites",
+            "name": "Chicken Bites (5)",
+            "price": 8.95,
+            "desc": "Bite-sized breaded fried chicken.",
+            "tags": [
+              "chicken",
+              "kid-pick"
+            ],
+            "img": null
+          },
+          {
+            "id": "okonomiyaki",
+            "name": "Okonomiyaki",
+            "price": 10.95,
+            "desc": "Savoury Japanese pancake with mixed seafood and cabbage.",
+            "tags": [
+              "seafood"
+            ],
+            "img": null
+          }
+        ]
+      },
+      {
+        "id": "tempura",
+        "name": "Tempura",
+        "nameJa": "天ぷら",
+        "items": [
+          {
+            "id": "ebi-tempura",
+            "name": "Ebi Tempura (7)",
+            "price": 14.85,
+            "desc": "Shrimp in light tempura batter.",
+            "tags": [
+              "popular",
+              "shellfish"
+            ],
+            "img": "ebi-tempura.jpg"
+          },
+          {
+            "id": "deluxe-tempura",
+            "name": "Deluxe Tempura",
+            "price": 19.85,
+            "desc": "Shrimp and vegetable assortment.",
+            "tags": [
+              "shellfish"
+            ],
+            "img": "delux-tempura.jpg"
+          },
+          {
+            "id": "vegetarian-tempura",
+            "name": "Vegetarian Tempura (7)",
+            "price": 12.95,
+            "desc": "Assorted vegetable tempura.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": "vegetarian-tempura.jpg"
+          },
+          {
+            "id": "yam-tempura",
+            "name": "Yam Tempura (7)",
+            "price": 10.85,
+            "desc": "Fresh yam in light batter.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": null
+          },
+          {
+            "id": "yasai-kakiage",
+            "name": "Yasai Kakiage (2)",
+            "price": 9.95,
+            "desc": "Crispy woven vegetable tempura fritters.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": null
+          },
+          {
+            "id": "ebi-kakiage",
+            "name": "Ebi Kakiage (2)",
+            "price": 13.95,
+            "desc": "Vegetable and shrimp tempura fritters.",
+            "tags": [
+              "shellfish"
+            ],
+            "img": null
+          }
+        ]
+      },
+      {
+        "id": "donburi",
+        "name": "Donburi Rice Bowls",
+        "nameJa": "丼",
+        "items": [
+          {
+            "id": "katsu-don",
+            "name": "Katsu Don",
+            "price": 14.95,
+            "desc": "Crispy pork cutlet, onion and mushroom simmered in sweet soy and egg.",
+            "tags": [
+              "pork"
+            ],
+            "img": null
+          },
+          {
+            "id": "katsu-curry",
+            "name": "Katsu Curry",
+            "price": 14.95,
+            "desc": "Japanese curry with pork cutlet.",
+            "tags": [
+              "pork",
+              "kid-pick"
+            ],
+            "img": "katsu-curry-don.jpg"
+          },
+          {
+            "id": "teriyaki-chicken-don",
+            "name": "Teriyaki Chicken Don",
+            "price": 15.95,
+            "desc": "Teriyaki chicken over rice.",
+            "tags": [
+              "popular",
+              "chicken",
+              "kid-pick"
+            ],
+            "img": "teriyaki-chicken-don.jpg"
+          },
+          {
+            "id": "teriyaki-beef-don",
+            "name": "Teriyaki Beef Don",
+            "price": 17.95,
+            "desc": "Stir-fried teriyaki beef and onion with tempura vegetables over rice.",
+            "tags": [
+              "beef"
+            ],
+            "img": "teriyaki-beef-don.jpg"
+          },
+          {
+            "id": "unagi-don",
+            "name": "Unagi Don",
+            "price": 19.95,
+            "desc": "Grilled BBQ eel over rice.",
+            "tags": [
+              "seafood"
+            ],
+            "img": "unagi-don.jpg"
+          }
+        ]
+      },
+      {
+        "id": "mini-donburi",
+        "name": "Mini Donburi (add to any bowl)",
+        "nameJa": "ミニ丼",
+        "items": [
+          {
+            "id": "buta-meshi",
+            "name": "Buta Meshi",
+            "price": 6.65,
+            "desc": "Chashu with miso and shiitake.",
+            "tags": [
+              "pork"
+            ],
+            "img": null
+          },
+          {
+            "id": "tan-tan-don",
+            "name": "Tan Tan Don",
+            "price": 6.65,
+            "desc": "Mild-spicy tan tan meat with a quail egg.",
+            "tags": [
+              "pork",
+              "mild-spicy",
+              "contains-peanut"
+            ],
+            "img": "tan-tan-don.jpg"
+          },
+          {
+            "id": "kani-ikura-don",
+            "name": "Kani Ikura Don",
+            "price": 6.65,
+            "desc": "Crab, tempura crumbs, ikura and mayo.",
+            "tags": [
+              "seafood",
+              "shellfish"
+            ],
+            "img": "kani-ikura-don.jpg"
+          },
+          {
+            "id": "takowasabi-don",
+            "name": "Takowasabi Don",
+            "price": 6.65,
+            "desc": "Furikake rice with wasabi-marinated octopus and beni shoga.",
+            "tags": [
+              "seafood"
+            ],
+            "img": null
+          }
+        ]
+      },
+      {
+        "id": "nabe",
+        "name": "Nabemono — Hot Stone Bowls",
+        "nameJa": "鍋",
+        "note": "Served bubbling in a hot stone bowl, with glass noodles. Perfect for an Edmonton winter.",
+        "items": [
+          {
+            "id": "kimchi-nabe",
+            "name": "Kimchi Nabe",
+            "price": 16.95,
+            "desc": "Spicy tonkotsu with kimchi, chicken, fried tofu, glass noodles and veggies.",
+            "tags": [
+              "spicy",
+              "chicken",
+              "pork-broth"
+            ],
+            "img": null
+          },
+          {
+            "id": "tonkotsu-nabe",
+            "name": "Tonkotsu Nabe",
+            "price": 16.95,
+            "desc": "Creamy pork bone soup with chicken, fried tofu, glass noodles and veggies.",
+            "tags": [
+              "chicken",
+              "pork-broth"
+            ],
+            "img": null
+          },
+          {
+            "id": "beef-nabe",
+            "name": "Beef Nabe",
+            "price": 16.95,
+            "desc": "Creamy pork bone soup with beef, fried tofu, glass noodles and veggies.",
+            "tags": [
+              "beef",
+              "pork-broth"
+            ],
+            "img": null
+          },
+          {
+            "id": "vegetarian-nabe",
+            "name": "Vegetarian Nabe",
+            "price": 15.95,
+            "desc": "Glass noodles, fried tofu and seasonal veggies.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": "vegetarian-nabe.jpg"
+          }
+        ]
+      },
+      {
+        "id": "rice-entree",
+        "name": "Fried Rice & Entrées",
+        "nameJa": "定食",
+        "items": [
+          {
+            "id": "deluxe-katsu-set",
+            "name": "Deluxe Katsu Set",
+            "price": 19.95,
+            "desc": "Pork cutlet with tonkatsu sauce, aji fry (2), chicken karaage (2), potato cakes (2), salad.",
+            "tags": [
+              "pork",
+              "sharing"
+            ],
+            "img": "deluxe-katsu-set.jpg"
+          },
+          {
+            "id": "grilled-saba",
+            "name": "Grilled Saba",
+            "price": 13.95,
+            "desc": "Grilled mackerel with salad — the perfect pairing with sake.",
+            "tags": [
+              "seafood"
+            ],
+            "img": null
+          },
+          {
+            "id": "egg-fried-rice",
+            "name": "Egg Fried Rice",
+            "price": 9.95,
+            "desc": "Golden egg fried rice with green onion.",
+            "tags": [
+              "vegetarian",
+              "kid-pick"
+            ],
+            "img": null
+          },
+          {
+            "id": "chinese-fried-rice",
+            "name": "Chinese Fried Rice",
+            "price": 12.95,
+            "desc": "Egg, carrot, peas, corn and diced ham.",
+            "tags": [
+              "pork"
+            ],
+            "img": null
+          }
+        ]
+      },
+      {
+        "id": "desserts",
+        "name": "Desserts",
+        "nameJa": "甘味",
+        "items": [
+          {
+            "id": "tempura-ice-cream",
+            "name": "Tempura Ice Cream",
+            "price": 10.95,
+            "desc": "Fried ice cream.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": null
+          },
+          {
+            "id": "mochi-ice-cream",
+            "name": "Mochi Ice Cream",
+            "price": 7.95,
+            "desc": "Chewy mochi ice cream with chocolate drizzle.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": null
+          },
+          {
+            "id": "ice-cream",
+            "name": "Ice Cream",
+            "price": 4.95,
+            "desc": "Cool, smooth finish after a hot bowl.",
+            "tags": [
+              "vegetarian"
+            ],
+            "img": null
+          }
+        ]
+      },
+      {
+        "id": "drinks",
+        "name": "Drinks, Beer & Sake",
+        "nameJa": "飲み物",
+        "items": [
+          {
+            "name": "Ramune (marble soda)",
+            "price": 5.5
+          },
+          {
+            "name": "Canned Pop",
+            "price": 2.75
+          },
+          {
+            "name": "Bottled Pop",
+            "price": 4.75
+          },
+          {
+            "name": "Juice",
+            "price": 4.75
+          },
+          {
+            "name": "Japanese Tea (per person)",
+            "price": 1
+          },
+          {
+            "name": "Sapporo / Asahi Draft 16 oz",
+            "price": 10
+          },
+          {
+            "name": "Sapporo / Asahi Draft 48 oz pitcher",
+            "price": 28
+          },
+          {
+            "name": "Sapporo / Asahi / Tsingtao bottle",
+            "price": 7
+          },
+          {
+            "name": "Okami Kasu rice ale (355 ml, Canadian-brewed)",
+            "price": 7
+          },
+          {
+            "name": "Aizu Homare Honjozo sake 5 oz (chilled or hot)",
+            "price": 7
+          },
+          {
+            "name": "Aizu Homare Honjozo sake 10 oz",
+            "price": 13.5
+          },
+          {
+            "name": "Hokkaido Zoo Cup sake 6 oz",
+            "price": 16.5
+          },
+          {
+            "name": "Lychee Kiss Martini",
+            "price": 9
+          },
+          {
+            "name": "Melon Sake",
+            "price": 9
+          },
+          {
+            "name": "Takasago Plum Wine 3 oz",
+            "price": 9
+          },
+          {
+            "name": "Strawberry Sweetheart (sake soda)",
+            "price": 8
+          },
+          {
+            "name": "Yuzu Good For Me (sake soda)",
+            "price": 8
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "_notice": "Concept redesign preview (a proposal). Not the official Hu's Noodle Nook website; facts and prices may be out of date. Official site: https://husnoodlenook.ca",
+  "schemaVersion": "2026-draft",
+  "name": "hus-noodle-nook",
+  "displayName": "Hu's Noodle Nook",
+  "description": "Read-only facts and menu search for Hu's Noodle Nook, a ramen and noodle restaurant in Edmonton, AB. All answers derive from https://husnoodlenook.ca/data/restaurant.json.",
+  "homepage": "https://husnoodlenook.ca/",
+  "contact": {
+    "phone": "+1-780-250-2600"
+  },
+  "lastVerified": "2026-11-07",
+  "policies": {
+    "readOnly": true,
+    "authentication": "none",
+    "ordering": "Agents must not place orders or payments; hand the user the start_order link.",
+    "allergens": "Allergen and diet tags are inferred from menu descriptions. Always advise users to confirm allergies with staff."
+  },
+  "transports": [
+    {
+      "type": "webmcp",
+      "description": "Tools are registered in-page via navigator.modelContext on every page that loads /assets/webmcp.js."
+    },
+    {
+      "type": "static",
+      "description": "Equivalent static data for agents without tool support.",
+      "resources": {
+        "llms": "https://husnoodlenook.ca/llms.txt",
+        "llmsFull": "https://husnoodlenook.ca/llms-full.txt",
+        "menu": "https://husnoodlenook.ca/menu.json",
+        "source": "https://husnoodlenook.ca/data/restaurant.json"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_hours",
+      "description": "Weekly opening hours in America/Edmonton time, plus a note about holidays.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "is_open_now",
+      "description": "Whether the restaurant is open right now (America/Edmonton), with today's hours and the next opening time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "get_menu",
+      "description": "Full menu, or one category, with prices in CAD.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "ramen",
+              "toppings",
+              "noodles",
+              "appetizers",
+              "tempura",
+              "donburi",
+              "mini-donburi",
+              "nabe",
+              "rice-entree",
+              "desserts",
+              "drinks"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "search_menu",
+      "description": "Filter dishes by diet, spice level, excluded allergens, protein, max price or free-text query.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Free text, e.g. 'udon' or 'garlic'."
+          },
+          "diet": {
+            "type": "string",
+            "enum": [
+              "vegetarian",
+              "vegan"
+            ]
+          },
+          "spicy": {
+            "type": "boolean",
+            "description": "true = only spicy or mildly spicy; false = only non-spicy."
+          },
+          "exclude_allergen": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "peanut",
+                "sesame",
+                "shellfish",
+                "fish-or-seafood",
+                "fish"
+              ]
+            }
+          },
+          "exclude_protein": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "pork",
+                "beef",
+                "chicken"
+              ]
+            }
+          },
+          "max_price": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "get_location_and_parking",
+      "description": "Address, building, neighbourhood, map link, parking instructions, accessibility and contact.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "start_order",
+      "description": "Returns the official online ordering link (pickup) and delivery partners. Does not place an order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": true
+      }
+    }
+  ]
+}

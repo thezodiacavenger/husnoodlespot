@@ -1,0 +1,31 @@
+> NOTICE: Concept redesign preview (a proposal). Not the official Hu's Noodle Nook website; facts and prices may be out of date. Official site: https://husnoodlenook.ca
+
+# Hu's Noodle Nook (胡氏麵館)
+
+> Cozy ramen and noodle shop in Edmonton's Oliver neighbourhood (11238 104 Ave NW, Edmonton, AB T5K 2X4). Known for its house Tan Tan peanut-sesame ramen, long-simmered tonkotsu broth, Hu's own Chinese-style noodle bowls, tempura, donburi and hot stone nabe. Rated 4.7/5 from 433 Google reviews. Closed Mondays.
+
+Key facts (verified 2026-11-07):
+
+- Hours (America/Edmonton): Mon closed · Tue–Fri 11:30 am–8 pm · Sat 12–8 pm · Sun 11:30 am–7 pm. Holiday hours may differ.
+- Phone / reservations: (780) 250-2600. Walk-ins welcome; usually no wait.
+- Order pickup: https://order.husnoodlenook.ca · Delivery: DoorDash, SkipTheDishes
+- Parking: free building lot; register your licence plate on the tablet at the front counter (about 3 hours).
+- Price: $$ — about CA$10–30 per person; ramen $14.95–$16.95.
+- Dietary: vegetarian ramen, nabe, tempura and small plates available. Allergen tags are inferred from menu descriptions — always tell guests to confirm allergies with staff. Several dishes contain peanut (all Tan Tan and Red Flame dishes).
+
+## Data
+
+- [Complete facts, menu and FAQ (plain text)](https://husnoodlenook.ca/llms-full.txt): everything an assistant needs, in one file
+- [Menu (JSON API)](https://husnoodlenook.ca/menu.json): every item with price, diet, spice level and allergen facets
+- [Menu (Markdown)](https://husnoodlenook.ca/menu.md): human/LLM-readable menu
+- [Source of truth](https://husnoodlenook.ca/data/restaurant.json): the file all other data is generated from
+
+## Agents
+
+- [For AI assistants & developers](https://husnoodlenook.ca/agents.html): endpoints, tools, citation and update policy
+- [Agent tool manifest](https://husnoodlenook.ca/.well-known/mcp.json): read-only tools (hours, is-open-now, menu search, location, ordering link)
+
+## Optional
+
+- [Website](https://husnoodlenook.ca/)
+- [Instagram](https://www.instagram.com/hus_noodle_nook/)

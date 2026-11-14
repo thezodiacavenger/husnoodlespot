@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hu's Noodle Nook · Concept viewer</title>
+<style>
+  :root { --ink:#141110; --paper:#f3ead9; --shu:#c8361e; --gold:#f0b24a; --line:#3a322c; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; background:var(--ink); color:var(--paper); font:500 14px/1.4 system-ui, -apple-system, sans-serif; }
+  body { display:flex; flex-direction:column; height:100dvh; }
+  .bar { display:flex; align-items:center; gap:10px; padding:10px 12px; padding-top:max(10px, env(safe-area-inset-top)); border-bottom:1px solid var(--line); flex:none; }
+  .bar b { font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .bar small { display:block; color:var(--gold); font-size:11px; letter-spacing:.06em; }
+  .seg { margin-left:auto; display:flex; background:#211c18; border:1px solid var(--line); border-radius:999px; padding:3px; flex:none; }
+  .seg button { appearance:none; border:0; background:none; color:var(--paper); font:inherit; padding:7px 14px; border-radius:999px; cursor:pointer; }
+  .seg button[aria-pressed="true"] { background:var(--shu); color:#fff; }
+  .stage { position:relative; flex:1; overflow:hidden; display:flex; justify-content:center; align-items:flex-start; }
+  .frame { border:0; background:#fff; transform-origin:top left; position:absolute; top:0; left:0; }
+  /* phone mode on a big screen: show a device-sized frame */
+  .stage.phone-on-desktop { align-items:center; padding:16px; }
+  .stage.phone-on-desktop .frame { position:relative; border-radius:28px; box-shadow:0 0 0 10px #000, 0 20px 60px rgba(0,0,0,.5); }
+  .hint { position:absolute; bottom:max(10px, env(safe-area-inset-bottom)); left:50%; transform:translateX(-50%); background:rgba(20,17,16,.85); color:var(--paper); padding:6px 12px; border-radius:999px; font-size:12px; pointer-events:none; transition:opacity .6s; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <div style="min-width:0"><small>CONCEPT PREVIEW</small><b>Hu's Noodle Nook</b></div>
+    <div class="seg" role="group" aria-label="Preview layout">
+      <button type="button" data-mode="phone" aria-pressed="true">Phone</button>
+      <button type="button" data-mode="desktop" aria-pressed="false">Desktop</button>
+    </div>
+  </div>
+  <div class="stage" id="stage">
+    <iframe class="frame" id="frame" src="index.html" title="Hu's Noodle Nook concept site"></iframe>
+    <div class="hint" id="hint"></div>
+  </div>
+<script>
+(function () {
+  var DESKTOP_W = 1440, PHONE_W = 390, PHONE_H = 844;
+  var stage = document.getElementById('stage'), frame = document.getElementById('frame'), hint = document.getElementById('hint');
+  var params = new URLSearchParams(location.search);
+  var mode = params.get('view') === 'desktop' ? 'desktop' : 'phone';
+
+  function layout() {
+    var sw = stage.clientWidth, sh = stage.clientHeight;
+    stage.classList.remove('phone-on-desktop');
+    frame.style.transform = ''; frame.style.left = '0';
+    if (mode === 'desktop') {
+      // Render the real 1440px desktop layout, scaled to fit this screen's width.
+      var s = Math.min(1, sw / DESKTOP_W);
+      frame.style.width = DESKTOP_W + 'px';
+      frame.style.height = (sh / s) + 'px';
+      frame.style.transform = 'scale(' + s + ')';
+      frame.style.left = Math.max(0, (sw - DESKTOP_W * s) / 2) + 'px';
+      showHint(s < 1 ? 'Desktop layout at ' + Math.round(s * 100) + '% — scroll inside' : '');
+    } else if (sw > 600) {
+      // Big screen: show a phone-sized device frame.
+      stage.classList.add('phone-on-desktop');
+      var ps = Math.min(1, (sh - 40) / PHONE_H);
+      frame.style.width = PHONE_W + 'px'; frame.style.height = PHONE_H + 'px';
+      frame.style.transform = 'scale(' + ps + ')'; frame.style.transformOrigin = 'center center';
+      showHint('');
+    } else {
+      // Actual phone: full-bleed, real mobile layout.
+      frame.style.width = sw + 'px'; frame.style.height = sh + 'px';
+      showHint('');
+    }
+    document.querySelectorAll('.seg button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === mode)); });
+  }
+  var t;
+  function showHint(msg) { hint.textContent = msg; hint.style.opacity = msg ? 1 : 0; clearTimeout(t); if (msg) t = setTimeout(function () { hint.style.opacity = 0; }, 3500); }
+
+  document.querySelectorAll('.seg button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      mode = b.dataset.mode;
+      var u = new URL(location.href); u.searchParams.set('view', mode); history.replaceState(null, '', u);
+      layout();
+    });
+  });
+  addEventListener('resize', layout);
+  addEventListener('orientationchange', function () { setTimeout(layout, 200); });
+  layout();
+})();
+</script>
+</body>
+</html>

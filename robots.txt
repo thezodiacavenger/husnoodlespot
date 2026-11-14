@@ -1,0 +1,3 @@
+# Concept redesign preview (a proposal). Not the official Hu's Noodle Nook website; facts and prices may be out of date. Official site: https://husnoodlenook.ca
+User-agent: *
+Disallow: /
